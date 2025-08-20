@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lbltitulo = new System.Windows.Forms.Label();
             this.lbltempo = new System.Windows.Forms.Label();
             this.txbtempo = new System.Windows.Forms.TextBox();
@@ -41,6 +42,7 @@
             // lbltitulo
             // 
             this.lbltitulo.AutoSize = true;
+            this.lbltitulo.BackColor = System.Drawing.Color.Transparent;
             this.lbltitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitulo.Location = new System.Drawing.Point(142, 38);
             this.lbltitulo.Name = "lbltitulo";
@@ -91,9 +93,8 @@
             this.lbldata.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldata.Location = new System.Drawing.Point(288, 91);
             this.lbldata.Name = "lbldata";
-            this.lbldata.Size = new System.Drawing.Size(70, 25);
+            this.lbldata.Size = new System.Drawing.Size(0, 25);
             this.lbldata.TabIndex = 5;
-            this.lbldata.Text = "label1";
             // 
             // lblresultado
             // 
@@ -116,8 +117,10 @@
             this.Controls.Add(this.txbtempo);
             this.Controls.Add(this.lbltempo);
             this.Controls.Add(this.lbltitulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = ":: Verificador De Temperatura ::";
             ((System.ComponentModel.ISupportInitialize)(this.pibimagem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
